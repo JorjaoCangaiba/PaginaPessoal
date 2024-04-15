@@ -46,17 +46,26 @@
     }
 
     footer{
-    background-color: yellow;
+    
     color: black;
     text-align: center;
     padding: 10px;
     }
 
-    .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+    .container{
+   background-color: yellow;     
+   width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;}
+
+  #item1, #item2, #item3, #item4{
+padding-right: 50px;
+padding-top: 20px;
+
 }
+
 
     
  </style>
@@ -95,28 +104,31 @@
         
 </main>
     <footer>
-    <div class="row"> 
-        <div class="column">
+    <div class="container"> 
+        <div class="box" id="item1">
             
             <a href="https://www.instagram.com/jorjaocangaiba/" target="_blank" type="external"><img src="IMAGEM/insta.png" alt="logo insta"> </a>
             <h3>@jorjaocangaiba</h3>
        </div>
 
-       <div class="column">
+       <div class="box" id="item2">
         <a href="https://www.facebook.com/jorge.cangaiba" target="_blank" type="external"><img src="IMAGEM/Facebook.72.png" alt="logo Facebook"></a>
         <h3>Jorge Cangaiba</h3>
        </div>
 
-       <div class="column">
+       <div class="box" id="item3">
         <a href="https://br.pinterest.com/JorgeCangaiba/_created/" target="_blank" type="external" ><img src="IMAGEM/Pinterest.72.png" alt="logo Pinterest"></a>
         <h3>JorgeCangaiba</h3>
         </div>
 
         
-        <div class="column">
+        <div class="box" id="item4">
         <a href="https://github.com/JorjaoCangaiba" target="_blank" type="external"><img src="IMAGEM/Github.72.png" alt="logo Github"></a>
         <h3>JorjaoCangaiba</h3>
         </div>
+     </div> 
+
+
 
   </footer>
 
